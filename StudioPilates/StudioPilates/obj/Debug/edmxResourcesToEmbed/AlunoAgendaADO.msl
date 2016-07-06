@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudioPilatesDALContextModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Agenda">
+      <EntityTypeMapping TypeName="StudioPilates.DAL.ContextModel.Agenda">
+        <MappingFragment StoreEntitySet="Agenda">
+          <ScalarProperty Name="AgendaId" ColumnName="AgendaId" />
+          <ScalarProperty Name="Aula" ColumnName="Aula" />
+          <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+          <ScalarProperty Name="DataFinal" ColumnName="DataFinal" />
+          <ScalarProperty Name="Instrutor" ColumnName="Instrutor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlunoAgenda">
+      <EntityTypeMapping TypeName="StudioPilates.DAL.ContextModel.AlunoAgenda">
+        <MappingFragment StoreEntitySet="AlunoAgenda">
+          <ScalarProperty Name="AlunoAgendaID" ColumnName="AlunoAgendaID" />
+          <ScalarProperty Name="Agenda" ColumnName="Agenda" />
+          <ScalarProperty Name="Aluno" ColumnName="Aluno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alunos">
+      <EntityTypeMapping TypeName="StudioPilates.DAL.ContextModel.Alunos">
+        <MappingFragment StoreEntitySet="Alunos">
+          <ScalarProperty Name="AlunoId" ColumnName="AlunoId" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Sobrenome" ColumnName="Sobrenome" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="DtNasc" ColumnName="DtNasc" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="AvaliacaoFisica" ColumnName="AvaliacaoFisica" />
+          <ScalarProperty Name="Endereco" ColumnName="Endereco" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Plano" ColumnName="Plano" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StudioPilates.DAL.ContextModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Agenda">
+    <Key>
+      <PropertyRef Name="AgendaId" />
+    </Key>
+    <Property Name="AgendaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Aula" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DataInicio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DataFinal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Instrutor" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlunoAgenda">
+    <Key>
+      <PropertyRef Name="AlunoAgendaID" />
+    </Key>
+    <Property Name="AlunoAgendaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Agenda" Type="Int32" Nullable="false" />
+    <Property Name="Aluno" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Alunos">
+    <Key>
+      <PropertyRef Name="AlunoId" />
+    </Key>
+    <Property Name="AlunoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sobrenome" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CPF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DtNasc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Celular" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telefone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AvaliacaoFisica" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Endereco" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Plano" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agenda" EntityType="Self.Agenda" />
+    <EntitySet Name="AlunoAgenda" EntityType="Self.AlunoAgenda" />
+    <EntitySet Name="Alunos" EntityType="Self.Alunos" />
+  </EntityContainer>
+</Schema>

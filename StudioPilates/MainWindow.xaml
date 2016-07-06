@@ -1,0 +1,15 @@
+﻿<Window x:Class="StudioPilates.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudioPilates"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="458,-21,0,0" VerticalAlignment="Top" Width="15" Height="16" RenderTransformOrigin="3.255,-2"/>
+        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="478,-21,0,0" VerticalAlignment="Top" Width="15" Height="16" RenderTransformOrigin="3.255,-2"/>
+        <Button x:Name="button_Copy1" Content="X" HorizontalAlignment="Left" Margin="498,-21,0,0" VerticalAlignment="Top" Width="15" Height="16" RenderTransformOrigin="3.255,-2" Background="#FFF70909" FontSize="10.667" IsCancel="True"/>
+
+    </Grid>
+</Window>
